@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html AngelynTorilla="cute">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Clone</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Main Container */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 50px; /* Added gap for spacing */
+    }
+
+    /* Left Section (Facebook Info) */
+    .left-section {
+      max-width: 600px;
+    }
+
+    .left-section h1 {
+      color: #1877f2;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .left-section p {
+      font-size: 25px;
+      color: black; 
+    }
+
+    /* Right Section (Login Form) */
+    .right-section {
+      max-width: 400px;
+      width: 100%;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .right-section form input {
+      width: 100%;
+      margin: 20px 0;
+      padding: 14px;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .right-section form button {
+      width: 100%;
+      padding: 14px;
+      margin: 20px 0;
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .right-section form button:hover {
+      background-color: #155bcb;
+    }
+
+    .forgot-password {
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    .create-account {
+      display: block;
+      margin: 30px auto; /* Center Horizontally */ 
+      padding: 14px;
+      background-color: #42b72a;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .create-account:hover {
+      background-color: #36a420;
+    }
+
+    /* Footer Styling */
+    footer {
+     padding: 20px;
+     background-color: #ffffff; /* White background for the entire footer */
+     font-size: 12px;
+     color: #606770; /* Text color */
+     text-align: center; /* Center text inside footer */
+  
+    }
+
+    .footer-container {
+      display: inline-block; /* Make the container fit the content width */ 
+      background-color: transparent; /* Invisible background */
+      padding: 10px; /* Optional: Add some internal space */
+      border: none;
+    }
+
+    .language-selector {
+      margin-bottom: 10; /* Space below the language list */
+      border-bottom: 1px solid lightgray; /* Light gray line at the bottom of the language list */
+    }
+
+    .language-selector {
+      margin: 0;  /* Remove margin from the paragraph */
+    }
+
+    footer p:nth-of-type(2)  {
+      margin-top: 10px;  /* Space above the copyright text */
+      word-spacing: 15px; /* Add space between words in the footer copyright paragraph */
+    }
+
+    select {
+      border: 1px solid #dddfe2;
+      border-radius: 4px;
+      padding: 5px;
+      background: white;
+      font-size: 12px;
+      color: #606770;
+    }
+
+    .sign-link {
+      color: #1877f2; /* Make it blue */
+      text-decoration: none;
+      font-weight: bold; /* Make it bold */
+      font-size: 18px; /* Increase font size */
+      padding-left: 5px; /* Add space to the left */
+}
+
+    .sign-link:hover {
+      text-decoration: underline;
+      font-size: 20px; /* Increase size on hover for emphasis */
+}
+
+
+    footer p {
+      margin-top: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left-section {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- Left Section -->
+    <section class="left-section">
+      <h1>facebook</h1>
+      <p>Connect with friends and the world </p>
+      <p>around you on Facebook.</p>
+    </section>
+
+    <!-- Right Section -->
+    <section class="right-section">
+      <form>
+        <input type="text" placeholder="Email or phone number" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+      </form>
+      <a href="#" class="forgot-password">Forgotten password?</a>
+      <button class="create-account">Create New Account</button>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <hr class="footer-line">
+  <footer>
+    <div class="language-selector">
+      <p>English (UK), Filipino, Bisaya, Español, Português (Brasil), Français (France), Italiano, 中文, 日本語, Deutsch <a href="+" class="sign-link"> + </a></p>
+      <p>Sign Up LogIn Messenger FacebookLite Video Places Games MarketPlace MetaPay  Meta Store Meta Quest  Ray-Ban Meta  Meta-AI   Instagram Threads Fundraisers Services Voting Information Center  Privacy Policy Privacy Center Groups About Create-ad Create Page Developers Careers Cookies Ad choices Terms Help Contact Uploading&Non-Users</p>
+    </div>
+    <p>© 2024 Facebook Clone</p>
+  </footer>
+</body>
+</html>
